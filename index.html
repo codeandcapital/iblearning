@@ -3,9 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Page</title>
+    <title>Exploring finance</title>
+    <style>
+      #details {
+        display: none;
+      }
+      .clickable {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Learning</h1>
+    <br><br>
+    <p class="clickable" onclick="var d = document.getElementById('details'); d.style.display = (d.style.display === 'none' ? 'block' : 'none');">
+      Walk me through the 3 financial statements
+    </p>
+    <div id="details">
+      <p>
+        “The 3 major financial statements are the Income Statement, Balance Sheet and Cash
+        Flow Statement.
+        The Income Statement gives the company’s revenue and expenses, and goes down to
+        Net Income, the final line on the statement.
+        The Balance Sheet shows the company’s Assets – its resources – such as Cash, Inventory
+        and PP&E, as well as its Liabilities – such as Debt and Accounts Payable – and
+        Shareholders’ Equity. Assets must equal Liabilities plus Shareholders’ Equity.
+        The Cash Flow Statement begins with Net Income, adjusts for non-cash expenses and
+        working capital changes, and then lists cash flow from investing and financing activities;
+        at the end, you see the company’s net change in cash.”</p>
+    </div>
   </body>
 </html>
